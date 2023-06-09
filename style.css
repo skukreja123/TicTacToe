@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+nav{
+    font-weight: bolder;
+    background-color: aqua;
+    color: white;
+    height: 56px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+}
+nav ul{
+    list-style-type: none;
+}
+
+.gamecontainor
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.containor
+{
+    position: relative;
+
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+
+}
+
+
+.box
+{
+    border: 2px solid black;
+    font-size: 6vw;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+background-color: brown;
+
+}
+
+.gameinfo{
+    padding: 0 35px;
+}
+
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.info{
+    font-size: 30px;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin-left: 12px;
+    border: 2px solid black;
+    border-radius: 34px;
+    background-color: antiquewhite;
+    padding: 6px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.line{
+    background-color:brown;
+    height: 3px;
+    width: 0vw;
+    position: absolute;
+    left: 0;
+
+}
+
+.gamecontainor{
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 920px) {
+    .containor{
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+    .box{
+        font-size: 10vw;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .info{
+        font-size: 35px;
+    }
+
+    #reset{
+        font-size: 23px;
+    }
+
+}
+
+
